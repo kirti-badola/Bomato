@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&family=Roboto:wght@400;500;700&display=swap');
+
+/*Common Part Start*/
+.heading, .sub-heading, title, .link, button, ul li, #hero-section h1, #hero-section h2{ font-family: 'Roboto', sans-serif; }
+.paragraph{ font-family: 'Montserrat', sans-serif;}
+
+.heading{ color:#201E2B;  font-size:36px; font-weight:600;}
+.sub-heading{ color: #201E2B;  font-size:24px; font-weight:500; }
+.title{color:#FA3733;  font-size:36px; font-weight:600;}
+.card-title{color:#FA3733;  font-size:24px; font-weight:600;}
+.paragraph{ color:#878787; font-size:16px; }
+.link{color:#878787;  font-size:14px; font-weight:600; }
+.para{  width:500px; height:100px; margin:0 auto; }
+
+.heading::before{
+  content: '';
+  background:#201E2B;
+  border-radius:2px;
+  height:5px;
+  width:200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(59px);
+  }
+  
+  .heading::After{
+  content: '';
+  background:#201E2B;
+  border-radius:5px;
+  height:10px;
+  width:50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: block;
+  transform: translateY(8px);
+  }
+  
+#cards img, #footer .fa, #contact .fa{ 
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FA3733;
+  color:#fff;
+  font-size: 15px;
+  padding:8px;
+}
+
+/*Common Part End*/
+
+/*hero section start*/
+.hero-background{
+	background: url("img/hero-section2.jpg") center no-repeat;
+  background-size: cover;
+	width:100%;
+  height:100vh;
+}
+
+.hero-text{ padding-top:250px; }
+#hero-section h1{color:#FA3733; font-size:72px; font-weight:600;}
+#hero-section h2{ font-size:24px; font-weight:400;}
+
+/*hero section End*/
+
+/*bomato sell*/
+#bomato_sell ul li{color:#878787;}
+.fa-check{color:#FA3733;}
+
+/*Cards*/
+.card img{margin:0 auto;}
+#cards img{ width:20%; height:20%;}
+
+/*contact Start*/
+#contact .stripe{
+  margin-top: 8rem;
+  background-image: linear-gradient(315deg, #201E2B 0%, #414141 74%);
+  padding: 2rem;
+  height:17rem ;
+  transform: rotate(10deg);
+}
+.stripe a{ color:#fff; padding-left: 10px; }
+.stripe a:hover{ color:#f32824; }
+/*contact End*/
+
+
+
+/*Responsive*/
+@media (max-width: 480px) { 
+
+  /*Common part*/
+.heading{ font-size:28px;}
+.sub-heading{ font-size:20px; }
+.title{font-size:28px; }
+.card-title{font-size:20px; }
+.heading::before{ transform: translateY(50px); }
+.para{ padding:0px 30px;}
+
+/*hero section*/
+#hero-section h1{ font-size:42px; }
+#hero-section h2{ font-size:20px; }
+.hero-text{ padding-top:200px; }
+
+/*Card*/
+.card{margin:0px 20px;}
+
+/*contact Start*/
+#contact .stripe{ margin-top: 3rem; transform: rotate(0deg); }
+
+ }
+
